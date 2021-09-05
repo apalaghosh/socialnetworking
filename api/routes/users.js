@@ -15,7 +15,6 @@ router.put("/:id", async (req, res, next) => {
         const salt = await bcrypt.genSalt(10);
         const hashedPswd = await bcrypt.hash(req.body.password, salt);
       } catch (err) {
-        console.log(err);
         next(err);
       }
     }
@@ -25,7 +24,6 @@ router.put("/:id", async (req, res, next) => {
       });
       res.status(200).json("Account has been updated");
     } catch (err) {
-      console.log(err);
       next(err);
     }
   } else {
@@ -40,7 +38,6 @@ router.delete("/:id", async (req, res, next) => {
       const user = await User.findByIdAndDelete(req.params.id);
       res.status(200).json("Account has been deleted");
     } catch (err) {
-      console.log(err);
       next(err);
     }
   } else {
@@ -63,7 +60,6 @@ router.get("/", async (req, res, next) => {
       user._doc;
     res.status(200).json(other);
   } catch (err) {
-    console.log(err);
     next(err);
   }
 });
@@ -82,7 +78,6 @@ router.put("/:id/follow", async (req, res, next) => {
         res.status(403).json("Already Following");
       }
     } catch (err) {
-      console.log(err);
       next(err);
     }
   } else {
@@ -104,7 +99,6 @@ router.put("/:id/unfollow", async (req, res, next) => {
         res.status(403).json("Already unFollowing");
       }
     } catch (err) {
-      console.log(err);
       next(err);
     }
   } else {

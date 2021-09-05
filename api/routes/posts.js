@@ -13,7 +13,6 @@ router.post("/", async (req, res, next) => {
     const savedPost = await newPost.save();
     res.status(200).json(savedPost);
   } catch (err) {
-    console.log(err);
     next(err);
   }
 });
@@ -29,7 +28,6 @@ router.put("/:id", async (req, res, next) => {
       res.status(403).json("You can update your own post only");
     }
   } catch (err) {
-    console.log(err);
     next(err);
   }
 });
@@ -46,7 +44,6 @@ router.put("/:id/like", async (req, res, next) => {
       res.status(200).json("The post has been disliked.");
     }
   } catch (err) {
-    console.log(err);
     next(err);
   }
 });
@@ -57,7 +54,6 @@ router.get("/:id", async (req, res, next) => {
     const post = await Post.findById(req.params.id);
     res.status(200).json(post);
   } catch (err) {
-    console.log(err);
     next(err);
   }
 });
@@ -74,7 +70,6 @@ router.get("/timeline/:userId", async (req, res, next) => {
     );
     res.status(200).json(userPosts.concat(...friendPosts));
   } catch (err) {
-    console.log(err);
     next(err);
   }
 });
@@ -86,7 +81,6 @@ router.get("/profile/:username", async (req, res, next) => {
     const posts = await Post.find({ userId: user._id });
     res.status(200).json(posts);
   } catch (err) {
-    console.log(err);
     next(err);
   }
 });

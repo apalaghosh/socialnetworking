@@ -21,7 +21,6 @@ export default function Login() {
 
   const responseSuccessGoogle = async (response) => {
     console.log(response);
-    // const res =
     await axios.post("auth/googlelogin", response.tokenId).then((response) => {
       console.log(response);
     });
