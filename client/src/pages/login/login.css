@@ -1,0 +1,120 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f2f5;
+  background-image: linear-gradient(#1e1e55, #1cb5e0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0;
+}
+.loginWrapper {
+  width: 30%;
+  height: 70%;
+  background-color: #fff;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.45);
+}
+.loginTop {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.loginBottom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  margin-top: 20px;
+  height: 70px;
+}
+
+.googleLoginButton {
+  margin-left: 90px;
+  margin-top: -5px;
+  width: 50%;
+}
+
+.loginLogo {
+  font-size: 55px;
+  font-weight: 800;
+  color: #1cb5e0;
+  /* color: rgb(8, 154, 252); */
+  margin-top: 20px;
+  margin-bottom: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginDesc {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginBox {
+  height: 150px;
+  width: 97%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.loginInputEmail {
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+.loginInputPassword {
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin-top: -20px;
+  margin-bottom: 1px;
+}
+
+.loginInputEmail:focus {
+  outline: none;
+}
+
+.loginInputPassword:focus {
+  outline: none;
+}
+
+.loginButton {
+  background-color: #1cb5e0;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin-top: -20px;
+  color: white;
+  font-weight: bold;
+  height: 35px;
+}
+
+.loginNew {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.loginRegister {
+  background-color: rgb(91, 212, 87);
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin-left: 50px;
+  margin-right: 60px;
+  height: 100px;
+  font-weight: 500;
+  color: white;
+}

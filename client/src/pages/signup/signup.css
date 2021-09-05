@@ -1,0 +1,72 @@
+.signup {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f2f5;
+  background-image: linear-gradient(#1cb5e0, #1e1e55);
+  margin: 0 0%;
+}
+
+.signupWrapper {
+  height: 70%;
+  width: 30%;
+  background-color: #fff;
+  padding: 25px;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.45);
+}
+
+.signupTop {
+  margin-bottom: -5px;
+}
+
+.signupLogo {
+  margin-bottom: -7px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.signupCenter {
+  height: 50vh;
+  padding-bottom: 20px;
+}
+
+.signupText {
+  padding: 5px;
+  margin: 50 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.signupInput {
+  border-radius: 10px;
+  border: 1px solid grey;
+  height: 32px;
+}
+.signupInput :focus {
+  outline: none;
+}
+
+.signupBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -25px;
+}
+
+.signupButton {
+  background-color: #1cb5e0;
+  /* background-color: rgb(8, 154, 252); */
+  outline: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: absolute;
+  border: 1px solid grey;
+  color: white;
+  height: 35px;
+  width: 100px;
+}
